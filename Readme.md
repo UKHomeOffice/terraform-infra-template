@@ -1,3 +1,5 @@
+# terraform-infra-template
+based template for aws
 =======
 
 This folder contains code/automation that sets up the network, firewall, servers. It also contains code for setting up the
@@ -25,6 +27,7 @@ The structure of this repository is laid out as follows.
 │   ├── products/           # <-- This contains all service definitions.
 │   └── roles/              # <-- This contains setup scripts for different components.
 │   └── test/               # <-- This contains the test for each product.
+├── 03-dev/                 # <-- Localhost Dev enviroment setup
+
 
 ````
-
