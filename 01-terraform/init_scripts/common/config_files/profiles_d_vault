@@ -1,0 +1,3 @@
+#!/bin/bash
+
+export VAULT_ADDR="http://vault0.common.env2.vpc.internal:8080/"

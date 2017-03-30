@@ -1,0 +1,23 @@
+#cloud-config
+
+hostname: servprx
+
+#bootcmd:
+#  - mkfs -t ext4 /dev/xvdh
+
+#mounts:
+#  - [ /dev/xvdh, /opt/example ]
+
+
+packages:
+  - git
+  - zip
+  - nginx
+  - awscli
+
+
+runcmd:
+  - [ mkdir, -p, /root/init_scripts ]
+  - "aws s3 cp s3://s3.backups.example/init_scripts/run_init_scripts.sh /root/init_scripts/ --region eu-west-1"
+  - "chmod +x /root/init_scripts/run_init_scripts.sh"
+  - "/root/init_scripts/run_init_scripts.sh feprx"

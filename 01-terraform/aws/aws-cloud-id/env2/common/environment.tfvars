@@ -1,0 +1,1 @@
+../ENVIRONMENT_VARIABLES/environment.common.tfvars
