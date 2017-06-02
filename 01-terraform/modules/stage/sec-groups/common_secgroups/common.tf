@@ -3,7 +3,7 @@
 # ===============================
 resource "aws_security_group" "common" {
   name = "sg_common_${var.vpc_env}"
-  description = "Common Traffic - Enables SSH from jenkins and jumpbox and zabbix access"
+  description = "Common Traffic"
 
   vpc_id = "${var.vpc_to_use}"
 
